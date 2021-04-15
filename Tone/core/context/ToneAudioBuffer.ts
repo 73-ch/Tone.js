@@ -153,6 +153,7 @@ export class ToneAudioBuffer extends Tone {
 	 */
 	dispose(): this {
 		super.dispose();
+		delete this._buffer;
 		this._buffer = undefined;
 		return this;
 	}
